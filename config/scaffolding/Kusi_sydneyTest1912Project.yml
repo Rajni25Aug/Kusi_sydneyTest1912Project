@@ -8,7 +8,45 @@ packages:
   gitUsername: Rajni25Aug
   gitBranch: main
 - name: SIQA_OriginTest_OnPremAssets
+  version: "1.0"
   gitServerName: RajniVC
   gitUrl: https://github.com/vijetadixit
   gitUsername: Rajni25Aug
   gitBranch: Test2
+services:
+- serviceName: project.kusi_sydneytest1912.integrations:Sum
+  packages:
+  - name: Kusi_sydneyTest1912Project
+    version: "1.0"
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
+- serviceName: pub.math:addInts
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2105
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2105
+- serviceName: project.kusi_sydneytest1912.integrations:deepclonetest
+  packages:
+  - name: Kusi_sydneyTest1912Project
+    version: "1.0"
+  - name: SIQA_OriginTest_OnPremAssets
+    version: "1.0"
+- serviceName: pub.string:stringToBytes
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2105
+- serviceName: pub.utils:deepClone
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2105
+- serviceName: pub.string:bytesToString
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2105
+- serviceName: pub.alert:emit
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2105
